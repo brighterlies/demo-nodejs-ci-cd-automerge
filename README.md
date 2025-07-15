@@ -38,16 +38,17 @@ Este proyecto es una demo de una aplicación Node.js integrada con un pipeline d
 ## 3. ¿Cómo mejorarías esta arquitectura de pipeline para proyectos reales? ¿Tomarías como opción el auto-merge?
 
 - Mejoras sugeridas:
- - Agregar validaciones más robustas: Integrar herramientas como `ESLint`, `SonarQube` o pruebas unitarias reales.
- - Separar entornos: Usar ramas `develop`, `staging` y `main` para controlar despliegues por ambiente.
- - Versionado automático: Incorporar tagging semántico (`v1.0.0`, `v1.1.0`) al hacer merge.
- - Notificaciones: Integrar `Slack` o correo para avisar cuando un PR se fusiona o se despliega.
+    - Agregar validaciones más robustas: Integrar herramientas como `ESLint`, `SonarQube` o pruebas unitarias reales.
+    - Separar entornos: Usar ramas `develop`, `staging` y `main` para controlar despliegues por ambiente.
+    - Versionado automático: Incorporar tagging semántico (`v1.0.0`, `v1.1.0`) al hacer merge.
+    - Notificaciones: Integrar `Slack` o correo para avisar cuando un PR se fusiona o se despliega.
 
 - ¿Usaría auto-merge? Sí, pero con condiciones. En proyectos reales, el `auto-merge` es útil si:
- - Hay una política clara de revisiones previas.
- - Los tests cubren casos críticos.
- - Se limita a ciertos tipos de PRs (por ejemplo, cambios menores o automatizados).
+    - Hay una política clara de revisiones previas.
+    - Los tests cubren casos críticos.
+    - Se limita a ciertos tipos de PRs (por ejemplo, cambios menores o automatizados).
 
 ----------------
 
 ## Resumen:
+En este ejercicio se permitió entender cómo estructurar un workflow completo, proteger ramas, gestionar secretos y automatizar el ciclo de desarrollo desde el commit hasta el despliegue
