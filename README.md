@@ -1,7 +1,5 @@
 # GRUPO 9 Ejercicio Guiado: Implementación de CI/CD con GitHub Actions: Validación, Auto-Merge y Despliegue en GitHub Pages
 
-# 🚀 demo-nodejs-ci-cd-automerge
-
 Este proyecto es una demo de una aplicación Node.js integrada con un pipeline de CI/CD usando **GitHub Actions**, que incluye:
 
 - Validación automática de código.
@@ -31,6 +29,36 @@ Este proyecto es una demo de una aplicación Node.js integrada con un pipeline d
     - .github/
         - workflows/
             - ci-cd-workflow.yml
+
+---
+
+## 🛠️ Requisitos para que funcione
+
+- Tener un archivo `package-lock.json` en el repositorio.
+- Guardar un token personal como secreto `ACTIONS_PAT`.
+- Activar GitHub Pages desde Settings → Pages → Source → GitHub Actions.
+- Proteger la rama `main` y habilitar “Require status checks to pass before merging”.
+
+---
+
+## 🧪 Cómo probar el flujo
+
+1. Crea una nueva rama:
+   ```bash
+   git checkout -b feature/nueva-ruta
+
+2. Haz cambios y push:
+   ```bash
+   git add .
+   git commit -m "feat: nueva ruta"
+   git push origin feature/nueva-ruta
+
+3. Abre un Pull Request hacia main.
+
+4. El pipeline se ejecutará automáticamente:
+    - Validará el código.
+    - Si todo pasa, hará auto-merge.
+    - Si es un push a `main`, desplegará en **GitHub Pages**.
 
 ---
 
