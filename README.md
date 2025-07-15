@@ -19,6 +19,21 @@ Este proyecto es una demo de una aplicación Node.js integrada con un pipeline d
 
 ---
 
+## 📂 Estructura del proyecto
+
+- demo-nodejs-ci-cd-automerge/
+    - .gitignore
+    - app.js  
+    - index.html
+    - package.json
+    - package-lock.json
+    - README.md
+    - .github/
+        - workflows/
+            - ci-cd-workflow.yml
+
+---
+
 ## Preguntas finales
 
 ## 1. ¿Qué ventajas te ofrece la integración de un auto-merge en el pipeline de actions?
@@ -51,4 +66,4 @@ Este proyecto es una demo de una aplicación Node.js integrada con un pipeline d
 ----------------
 
 ## Resumen:
-En este ejercicio se permitió entender cómo estructurar un workflow completo, proteger ramas, gestionar secretos y automatizar el ciclo de desarrollo desde el commit hasta el despliegue
+En este ejercicio se permitió entender cómo estructurar un workflow completo, proteger ramas, gestionar secretos y automatizar el ciclo de desarrollo desde el commit hasta el despliegue.
